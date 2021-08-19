@@ -1,0 +1,67 @@
+/*------------------Responsive index---------------*/
+/*---Pantalla pequeña--*/
+@media only screen and (min-width: 450px) {    
+    #parrafoIndex1 {
+    justify-self: center; 
+    width: 40rem;
+    font-size: 1.4rem;        
+    }
+    #mediaIndex1 {
+    width:400px;
+    height:230px;
+    }
+    #mediaIndex2 {
+    width:400px;
+    }     
+    #parrafoIndex2 { 
+    width: 40rem;
+    font-size: 1.4rem;        
+    }
+}
+/*---TABLET---*/
+@media only screen and (min-width: 600px) {    
+    #parrafoIndex1 {
+    justify-self: center; 
+    width: 50rem;
+    font-size: 1.8rem;        
+    }
+    #mediaIndex1 {
+    width:540px;
+    height:300px;
+    }
+    #mediaIndex2 {
+    width:540px;
+    }     
+    #parrafoIndex2 { 
+    width: 50rem;
+    font-size: 1.8rem;        
+    }
+}
+
+/*---DESKTOP---*/
+@media only screen and (min-width: 1150px) {
+#gridIndex {
+    grid-template-areas:
+        "parrafoIndex1 mediaIndex1"
+        "mediaIndex2   parrafoIndex2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    }  
+    #parrafoIndex1 {
+    justify-self: end; 
+    width: 50rem;            
+    }
+    #mediaIndex1 { 
+    justify-self: start;
+    width:540px;
+    height:300px;
+    }
+    #mediaIndex2 { 
+    justify-self: end; 
+    width:540px;
+    }
+    #parrafoIndex2 { 
+    justify-self: start; 
+    width: 50rem;    
+    }
+}

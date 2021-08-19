@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
+    <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
+    <title>Quienes somos</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
+        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
+        <nav id="navGrande" class="header__navigation container-fluid">  
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>              
+                <li><a href="quienes_somos.html" class="seleccionNav">Quienes somos</a></li>
+                <li><a href="games.html">Games</a></li>    
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="oportunidades.html">Oportunidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="textocrump" aria-label="breadcrumb">
+        <ol class=" breadcrumb ">
+          <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active " aria-current="page">Quienes Somos</li>
+        </ol>
+    </nav>
+
+    <div id="contenedor">
+
+        <h1>Nos mueve el entretenimiento</h1>
+
+        <section id="gridSobreNosotros2" class="sobreNosotros">
+            <div id="mediaSobreNosotos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mediaSobreNosotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mediaSobreNosotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mediaSobreNosotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/QuienesSomos2.gif" width="500" height="315" class="d-block w-100" alt="QuienesSomos2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/QuienesSomos3.jpg"  width="500" height="315" class="d-block w-100" alt="QuienesSomos3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/QuienesSomos1.jpg"  width="500" height="315" class="d-block w-100" alt="QuienesSomos1">               
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mediaSobreNosotos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Antrior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mediaSobreNosotos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+                
+            <div id="parrafoSobreNosotros" class="sobreNosotros__parrafo">
+                <p class="sobreNosotros__parrafo" >Somos un grupo de amigos apasionados por el mundo gamer en todas sus etapas.</p>
+                <p class="sobreNosotros__parrafo"> Nos emociona crear, pensar y jugar.</p>   
+                <p class="sobreNosotros__parrafo">Nos motiva entender y educar a través de lo que hacemos.</p>             
+            </div> 
+        </section>
+    </div> 
+    
+    <footer class="footer footerFlex">    
+        <div>
+            <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
+            <h5 class="footer__texto">Copyright 2021</h5> 
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img class="footer__iconos" src="media/ig.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img class="footer__iconos" src="media/fb.svg" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footer__iconos" src="media/tw.svg" alt="twitter"></a>
+            <a href="https://www.whatsapp.com/"><img class="footer__iconos" src="media/wp.svg" alt="whatsapp"></a>
+        </div>
+        <div> 
+            <a href="mailto:dgames@gmail.com">
+                <img src="media/mail.svg" class="footer__iconos" alt="mail">
+                <p class="footer__texto footer__texto-mail">dgames@gmail.com</p>
+            </a>   
+        </div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

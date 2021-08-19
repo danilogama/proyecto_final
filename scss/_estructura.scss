@@ -1,0 +1,568 @@
+@import "variables";
+*{
+    Margin:0;
+    padding:0;
+}
+body{    
+    background-color: $colorPrincipal;
+}
+
+.header{
+    background-color:$colorHeaderFooter;
+    margin-bottom: 1rem;
+}
+.header__logo{    
+    width: $anchoLogo;
+}
+.header__navigation{
+    background-color: $colorSecundario;  
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    ul {
+        list-style:none;
+        display: inline-table;
+        
+        li {
+            display:inline-block;
+            position: relative;    
+            padding-left: 2rem;
+            margin-top: 1rem;
+            a{ 
+                list-style-position: outside;
+                color: $colorFontParrafo;
+                font-size: 1.5rem;
+                text-decoration: none;     
+                padding: 0.5rem;
+                font-weight: bold;
+            }
+            a:hover{
+                background-color: $colorPrincipal;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+.seleccionNav{
+    background-color: $colorPrincipal;
+    border-radius: 1rem;
+}
+
+.footer {    
+    background-color:$colorHeaderFooter;
+    margin-top: 1rem;
+    padding: 1rem;
+    position: absolute;;
+    width: 100%;
+}
+
+#contenedor{
+    min-height: calc(100vh - 170px);
+}
+
+.footer__iconos{
+    width: 35px;
+}
+.footer__logo{
+    width: ($anchoLogo / 2);
+}
+.footer__texto{
+    font-weight: bold;
+    font-size: small;
+    font-size: 1.5rem;
+}
+
+.footer__texto-mail{   
+    display: inline-block;
+}
+
+.footerFlex{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+}
+.noticias{
+    font-family: 'Prompt', sans-serif;
+}
+
+.noticias__parrafo{
+    margin: 1rem;
+    color:$colorFontParrafo;   
+    line-height: 1.5;
+    text-align: left;
+    padding: 2rem;
+}
+
+.noticias__parrafo--destacadas{
+    font-style: oblique;
+    font-size: large;
+    background-color: $colorSecundario;
+}
+
+.sobreNosotros{
+    font-style: normal;
+}
+.sobreNosotros__parrafo{
+    width: 45rem;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+}
+.sobreNosotros__imagen{
+    justify-self: center;
+    align-self: center;
+}
+
+.blog__busqueda{
+    clear: right;
+    margin-left: 100rem;
+    margin-top: 1rem;
+    color:$colorFontParrafo;
+    font-size: 1.4rem;
+}
+.blog__parrafo{
+    font-size: 1.8rem;    
+}
+
+.contacto__form{    
+    background-color: $colorSecundario;
+}
+
+.contacto__form--button{
+    padding: 0.5rem;
+    background-color:$colorHeaderFooter;
+    border-radius:0.5rem;
+}
+
+.contacto__parrafo{  
+      
+    width: 26rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+p{
+    margin: 1rem;
+}
+
+h1{
+    text-align: center;
+    font-size: $fontSizeTitulo;
+    margin: 2rem;
+}
+h2{
+    text-align: center;
+    font-size: ($fontSizeTitulo - 2rem);    
+}
+
+.bordesNegros{
+    -webkit-text-stroke: 2px black;
+}
+
+.bordesRedondeados{
+    border-radius: 1rem;
+}
+
+.buttonIniciarSesion{
+    position: absolute;
+    margin: auto;
+    right: 1rem;
+    top: 1rem;
+}
+
+.carousel-item{
+    max-height: 500px;
+}
+
+.imagenCarousel{
+    max-height: 700px;
+}
+
+/*------------------Index---------------*/
+
+/*CAMBIAR NOMBRES*/
+#imagenPrincipal {
+    width: 75%;
+    margin-bottom: 1rem;
+    max-height: 500px;
+}
+  
+#contenedorImagenPrincipal {
+    position: relative; 
+    display:block;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.TextoImagenPrincipal {
+    position: absolute;
+    top: 1%; 
+    left: 14%;
+    color: white;
+}
+
+.Texto2ImagenPrincipal{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    margin-top: 1rem;
+    transform: translate(0%, -50%);
+    color: white;
+    font-size: 4rem;
+}
+
+/*-----Usando FOR--------*/
+@for $i from 1 through 2 {
+    #mediaIndex#{$i} {    grid-area: mediaIndex#{$i};  
+        justify-self: center;
+        align-self: center;
+        margin: 1rem;
+        width:350px; }
+}
+
+
+/*------------------Productos---------------*/
+#gridProductosGrande {
+    display: grid; 
+    justify-content: center;
+    grid-template-areas:
+      "imagenProducto1  parrafoProducto1"
+      "imagenProducto1  imagenTienda1"
+      "imagenProducto1  imagenTienda11"
+      "imagenProducto2  parrafoProducto2"
+      "imagenProducto2  imagenTienda2"
+      "imagenProducto2  imagenTienda22"
+      "imagenProducto3  parrafoProducto3"
+      "imagenProducto3  imagenTienda3"
+      "imagenProducto3  imagenTienda33";
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 2rem;
+}
+#imagenProducto1 {
+    grid-area: imagenProducto1;  
+    justify-self: end;
+    align-self: center;
+    margin: 1rem;        
+    width:570px;
+    height:350px;
+}
+#parrafoProducto1 {
+    grid-area: parrafoProducto1; 
+    justify-self: start;
+    align-self: center;
+    font-size: 1.8rem;    
+}
+#imagenTienda1{
+    grid-area: imagenTienda1;  
+    justify-self: start;
+    align-content: flex-end;
+    margin: 1rem;         
+    width:10px;
+    height:50px;    
+}
+#imagenTienda11{
+    grid-area: imagenTienda11;  
+    justify-self: start;
+    align-content: flex-start;
+    margin: 1rem;         
+    width:10px;
+    height:50px;    
+}
+#imagenProducto2 {
+    grid-area: imagenProducto2;  
+    justify-self: end;
+    align-self: center;
+    margin: 1rem;         
+    width:570px;
+    height:350px;
+}
+#parrafoProducto2 {
+    grid-area: parrafoProducto2; 
+    justify-self: start;
+    align-self: center;
+    font-size: 1.8rem;    
+}
+#imagenTienda2{
+    grid-area: imagenTienda2;  
+    justify-self: start;
+    align-content: center;
+    margin: 1rem;           
+    width:10px;
+    height:50px;
+}
+#imagenTienda22{
+    grid-area: imagenTienda22;  
+    justify-self: start;
+    align-content: flex-start;
+    margin: 1rem;           
+    width:10px;
+    height:50px;
+}
+#imagenProducto3 {
+    grid-area: imagenProducto3;  
+    justify-self: end;
+    align-self: center;
+    margin: 1rem;         
+    width:570px;
+    height:350px;
+}
+#parrafoProducto3 {
+    grid-area: parrafoProducto3; 
+    justify-self: start;
+    align-self: center;
+    font-size: 1.8rem;    
+}
+#imagenTienda3{
+    grid-area: imagenTienda3;  
+    justify-self: start;
+    align-content: center;
+    margin: 1rem;   
+    width:100px;
+     height:40px; 
+}
+#imagenTienda33{
+    grid-area: imagenTienda33;  
+    justify-self: start;
+    align-content: flex-start;
+    margin: 1rem;        
+    width:10px;
+    height:50px;
+}
+#gridProductosChica {
+    display: grid; 
+    justify-content: center;
+    grid-template-areas:
+      "imagenProductoChico1  imagenProductoChico2   imagenProductoChico3"
+      "parrafoProductoChico1 parrafoProductoChico2  parrafoProductoChico3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;    
+    margin-top: 4rem;
+}
+#imagenProductoChico1 {
+    grid-area: imagenProductoChico1;  
+    justify-self: end;
+    align-self: center;
+    margin: 1rem;
+    width:300px;
+}
+#parrafoProductoChico1 {
+    grid-area: parrafoProductoChico1; 
+    justify-self: end;
+    width: 30rem;
+    font-size: 1.5rem;   
+}
+#imagenProductoChico2 {
+    grid-area: imagenProductoChico2;  
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;        
+    width:300px;
+}
+#parrafoProductoChico2 {
+    grid-area: parrafoProductoChico2; 
+    justify-self: center;
+    width: 30rem;
+    font-size: 1.5rem;    
+}
+#imagenProductoChico3 {
+    grid-area: imagenProductoChico3;  
+    justify-self: start;
+    align-self: center;
+    margin: 1rem;        
+    width:300px;
+}
+#parrafoProductoChico3 {
+    grid-area: parrafoProductoChico3; 
+    justify-self: start;
+    width: 30rem;
+    font-size: 1.5rem;
+}
+
+/*------------------Sobre nosotros---------------*/
+#gridSobreNosotros2 {
+    display: grid; 
+    justify-content: center;        
+    grid-template-areas:
+    "mediaSobreNosotos parrafoSobreNosotros";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr ;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+#imagenSobreNosotros {
+    grid-area: imagenSobreNosotros;  
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;        
+    width: 1080px;
+    height: 500px;
+}
+#parrafoSobreNosotros {
+    grid-area: parrafoSobreNosotros; 
+    justify-self: start;     
+    font-size: 1.5rem;
+}
+#mediaSobreNosotos {
+    grid-area: mediaSobreNosotos;  
+    justify-self: end;
+    align-self: center;
+    margin: 1rem;
+    width:500px;
+    height:315px;
+}
+
+
+/*------------------Novedades---------------*/
+#gridNovedades {
+    display: grid; 
+    justify-content: center;
+    grid-template-areas:
+      "ImagenNot1   ImagenNot2"
+      "TituloNot1   TituloNot2"
+      "CopeteNot1   CopeteNot2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+#ImagenNot1 {
+    grid-area: ImagenNot1;  
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;        
+    width:500px;
+}
+#TituloNot1 {
+    grid-area: TituloNot1; 
+    justify-self: center;
+    align-self: center;
+    width: 45rem; 
+    font-size: 5rem;
+}
+#CopeteNot1 {
+    grid-area: CopeteNot1; 
+    justify-self: center;
+    width: 45rem; 
+}#ImagenNot2 {
+    grid-area: ImagenNot2;  
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;        
+    width:500px;
+}
+#TituloNot2 {
+    grid-area: TituloNot2; 
+    justify-self: center;
+    align-self: center;
+    width: 45rem; 
+    
+    font-size: 5rem;
+}
+#CopeteNot2 {
+    grid-area: CopeteNot2; 
+    justify-self: center;
+    width: 45rem; 
+}
+
+.ImgNovedad{
+    width:500px;
+}
+
+.ImgNovedad:hover{
+    transform: scale(1.2,1.2);
+}
+.margenNot{
+    display:block; margin:2rem auto ;
+    width: 75rem;
+}
+
+.centraImagen{display:block;
+    margin:auto;
+}
+
+/*------------------Oportunidades---------------*/
+#gridOportunidades {
+    display: grid; 
+    justify-content: center;        
+    grid-template-areas:
+    "formularioContacto  textoOport1"
+    "formularioContacto textoOport2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    margin-top: 3rem;
+}
+#formularioOportunidades {
+    grid-area: formularioContacto;  
+    justify-self: end;
+    align-self: top;
+    margin: 1rem;        
+    width: 300px;
+    height: 350px;
+}
+#textoOport1 {
+    grid-area: textoOport1;  
+    justify-self: start;
+    align-self: center;
+    margin: 1rem;
+    font-size: 4rem;    
+    width:400px;
+    height:200px;
+}
+#textoOport2 {
+    grid-area: textoOport2; 
+    justify-self: start; 
+}
+form{
+    font-size: 1rem;
+    padding: 3rem;
+}
+
+.largolabel{
+    width: 40px;
+    margin: 1rem;
+}
+.margenbox{
+    margin: 1rem;
+
+}
+
+@each $button in enviarFormulario,vaciarFromulario  {
+    .#{$button} { 
+        float: left;
+        margin-left: 13rem;       
+        @if $button == enviarFormulario {
+            width: 10rem;
+        }@else if $button == vaciarFromulario{
+            width: 5rem;          
+        }
+    }    
+} 
+
+
+/*------------------Error 404---------------*/
+
+#imagenError{
+    float: left;
+    width: 200px;
+}
+
+
+  
+
+
+
+
+
+
+

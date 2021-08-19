@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"/> 
+    <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
+    <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
+    <title>Oportunidades</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
+        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
+        <nav id="navGrande" class="header__navigation container-fluid">  
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>              
+                <li><a href="quienes_somos.html">Quienes somos</a></li>
+                <li><a href="games.html">Games</a></li>    
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="oportunidades.html" class="seleccionNav">Oportunidades</a></li>
+            </ul>
+        </nav>
+    </header>
+       
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Oportunidades</li>
+        </ol>
+    </nav>
+
+    <div id="contenedor">
+       
+        <h1>Oportunidades</h1>
+
+        <section id="gridOportunidades">
+            <form id="formularioOportunidades" class="contacto__form bordesRedondeados" action="contacto_gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <label class="largolabel" for="nombre">Nombre:</label>
+                <input type="text" name="nombre"/>
+                <label class="largolabel" for="mail">Mail:</label>
+                <input type="text" name="mail"/>
+                <label class="largolabel" for="celular">Celular:</label>
+                <input type="text" name="celular"/>
+                <label class="largolabel" for="mensaje">Mensaje:</label>
+                <textarea class="margenbox" style="resize:none" name="mensaje" rows="6" cols="40"></textarea>                
+                <input class="contacto__form--button enviarFormulario" type="submit" value="Enviar"/>
+                <input class="contacto__form--button vaciarFormulario" type="reset" value="Vaciar"/>
+            </form>
+
+            <p id="textoOport1" class="contacto__parrafo">Unite a nuestro equipo!</p>
+            <p id="textoOport2" class="contacto__parrafo">Si te apasiona el mundo gamer como a nosotros y pensas que tenes para sumar, aplica y unite al equipo.</p>
+        </section>
+    </div>
+
+    <footer class="footer footerFlex">    
+        <div>
+            <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
+            <h5 class="footer__texto">Copyright 2021</h5> 
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img class="footer__iconos" src="media/ig.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img class="footer__iconos" src="media/fb.svg" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footer__iconos" src="media/tw.svg" alt="twitter"></a>
+            <a href="https://www.whatsapp.com/"><img class="footer__iconos" src="media/wp.svg" alt="whatsapp"></a>
+        </div>
+        <div> 
+            <a href="mailto:dgames@gmail.com">
+                <img src="media/mail.svg" class="footer__iconos" alt="mail">
+                <p class="footer__texto footer__texto-mail">dgames@gmail.com</p>
+            </a>   
+        </div>
+    </footer>
+</body>
+</html>

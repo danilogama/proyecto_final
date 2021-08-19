@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"/>    
+    <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
+    <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
+        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
+        <nav id="navGrande" class="header__navigation container-fluid">  
+            <ul>  
+                <li><a href="index.html" class="seleccionNav">Inicio</a></li>              
+                <li><a href="quienes_somos.html">Quienes somos</a></li>
+                <li><a href="games.html">Games</a></li>    
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="oportunidades.html">Oportunidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="contenedorImagenPrincipal">
+        <img src="media/ImagenInicio.jpg" id="imagenPrincipal" alt="ImagenPrincipal">
+        <h1 class="text-inverse TextoImagenPrincipal">Hola!</h1>
+        <p class="Texto2ImagenPrincipal" >Gracias por visitarnos</p>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="games.html"><img src="media/sonic.jpg" class="imagenCarousel d-block w-100" alt="sonic"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="bordesNegros bordesNegros">Games</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="novedadA.html"><img src="media/Leveluy.jpg" class="imagenCarousel d-block w-100" alt="leveluy"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="bordesNegros">Level UY</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="oportunidades.html"><img src="media/QuienesSomos1.jpg" class="imagenCarousel d-block w-100" alt="quienesSomos"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="bordesNegros">Unite a nuestro equipo</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Antrior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+   
+    <footer class="footer footerFlex">    
+        <div>
+            <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
+            <h5 class="footer__texto">Copyright 2021</h5> 
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img class="footer__iconos" src="media/ig.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img class="footer__iconos" src="media/fb.svg" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footer__iconos" src="media/tw.svg" alt="twitter"></a>
+            <a href="https://www.whatsapp.com/"><img class="footer__iconos" src="media/wp.svg" alt="whatsapp"></a>
+        </div>
+        <div> 
+            <a href="mailto:dgames@gmail.com">
+                <img src="media/mail.svg" class="footer__iconos" alt="mail">
+                <p class="footer__texto footer__texto-mail">dgames@gmail.com</p>
+            </a>   
+        </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

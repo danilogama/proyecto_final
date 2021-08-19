@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"/> 
+    <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
+    <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
+    <title>Novedades</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
+        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
+        <nav id="navGrande" class="header__navigation container-fluid">  
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>              
+                <li><a href="quienes_somos.html">Quienes somos</a></li>
+                <li><a href="games.html">Games</a></li>    
+                <li><a href="novedades.html"  class="seleccionNav">Novedades</a></li>
+                <li><a href="oportunidades.html">Oportunidades</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Novedades</li>
+        </ol>
+    </nav>
+    
+    <h1>Novedades</h1>
+
+    <section id="gridNovedades" class="blog__parrafo">
+        <a id="ImagenNot1" href="novedadA.html"> <img  class="ImgNovedad" src="media/Leveluy.jpg" alt="Icono documento"></a>
+        <h2 id="TituloNot1">Se realizó la edición 2020 del Level Uy</h2>
+        <p id="CopeteNot1">Se llevó a cabo a través de talleres virtuales y su objetivo fue ofrecer contenidos de valor tanto para profesionales del desarrollo de videojuegos como para estudiantes.</p>
+        
+        <a  id="ImagenNot2" href="novedadB.html"><img class="ImgNovedad" src="media/gdc.jpg"  alt="Icono info"></a>
+        <h2 id="TituloNot2">Game Developers Conference 2021</h2>
+        <p id="CopeteNot2">Se llevó adelante la Game Developers Conference 2021, el evento más grande de la industria Videojuegos</p>
+    </section>
+
+    <footer class="footer footerFlex">    
+        <div>
+            <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
+            <h5 class="footer__texto">Copyright 2021</h5> 
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img class="footer__iconos" src="media/ig.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img class="footer__iconos" src="media/fb.svg" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footer__iconos" src="media/tw.svg" alt="twitter"></a>
+            <a href="https://www.whatsapp.com/"><img class="footer__iconos" src="media/wp.svg" alt="whatsapp"></a>
+        </div>
+        <div> 
+            <a href="mailto:dgames@gmail.com">
+                <img src="media/mail.svg" class="footer__iconos" alt="mail">
+                <p class="footer__texto footer__texto-mail">dgames@gmail.com</p>
+            </a>   
+        </div>
+    </footer>
+</body>
+</html>
