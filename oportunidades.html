@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+     <!-- CAMBIAR FATICON -->
+     <link rel="icon" type="icon/png" href="media/Logo_Rana.png">
     <link rel="stylesheet" href="css/estilos.css"/> 
     <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
     <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
@@ -18,25 +20,48 @@
     <header class="header">
         <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
         <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
-        <nav id="navGrande" class="header__navigation container-fluid">  
-            <ul>  
-                <li><a href="index.html">Inicio</a></li>              
-                <li><a href="quienes_somos.html">Quienes somos</a></li>
-                <li><a href="games.html">Games</a></li>    
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="oportunidades.html" class="seleccionNav">Oportunidades</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark">
+            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="media/Logo_Rana.png" width="50px" alt="Imagen Logo">
+            </a>
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse header__navigation2" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link itemmenu seleccionNav" href="oportunidades.html">Oportunidades</a>
+                </li>             
+              </ul>
+            </div>
+          </nav>
     </header>
        
-    <nav aria-label="breadcrumb">
+    <!-- <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Oportunidades</li>
         </ol>
-    </nav>
+    </nav> -->
 
-    <div id="contenedor">
+    <h1>Oportunidades</h1>
+
+    <!-- <div id="contenedor">
        
         <h1>Oportunidades</h1>
 
@@ -57,9 +82,47 @@
             <p id="textoOport1" class="contacto__parrafo">Unite a nuestro equipo!</p>
             <p id="textoOport2" class="contacto__parrafo">Si te apasiona el mundo gamer como a nosotros y pensas que tenes para sumar, aplica y unite al equipo.</p>
         </section>
+    </div> -->
+
+    <!-- <form id="formularioOportunidades" class="contacto__form bordesRedondeados" action="contacto_gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
+        <label class="largolabel" for="nombre">Nombre:</label>
+        <input type="text" name="nombre"/>
+        <label class="largolabel" for="mail">Mail:</label>
+        <input type="text" name="mail"/>
+        <label class="largolabel" for="celular">Celular:</label>
+        <input type="text" name="celular"/>
+        <label class="largolabel" for="mensaje">Mensaje:</label>
+        <textarea class="margenbox" style="resize:none" name="mensaje" rows="6" cols="40"></textarea>                
+        <input class="contacto__form--button enviarFormulario" type="submit" value="Enviar"/>
+        <input class="contacto__form--button vaciarFormulario" type="reset" value="Vaciar"/>
+    </form> -->
+    
+
+    <div class="areacontacto container">
+        <div class="row align-items-center">
+            <div class="areacontacto col col-md-6 col-sm-12 col-12">
+                <form action="contacto_gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
+                    <label for="name">Nombre y Apellido:</label><br><br>
+                    <input type="text" id="nombreyapellido" name="nombreyapellido" class="inputFormulario"><br><br>
+                    <label for="celular">Celular: </label> <br><br>
+                    <input type="text" id="whatsapp" name="whatsapp" class="inputFormulario"><br><br>
+                    <label for="Email">Email:</label> <br><br>
+                    <input type="text" id="email" name="email" class="inputFormulario"><br><br>
+                    <label for="Email">Mensaje:</label> <br><br>
+                    <textarea class="margenbox" style="resize:none" name="mensaje" rows="6" cols="40"></textarea><br><br>
+                            
+                    <input type="reset" value="Limpiar" class="botonBlanco">
+                    <input type="submit" value="Enviar" class="botonBlanco">
+                </form>
+            </div>    
+            <div class="col col-md-6 col-sm-12 col-12">
+                <h2 id="textoOport1" class="contacto__parrafo">Unite a nuestro equipo!</h2>
+                <p id="textoOport2" class="contacto__parrafo">Si te apasiona el mundo gamer como a nosotros y pensas que tenes para sumar, aplica y unite al equipo.</p>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer footerFlex">    
+    <footer class="footer footerFlex fotterFinal">    
         <div>
             <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
             <h5 class="footer__texto">Copyright 2021</h5> 
@@ -77,5 +140,13 @@
             </a>   
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
