@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-     <!-- CAMBIAR FATICON -->
-     <link rel="icon" type="icon/png" href="media/Logo_Rana.png">
     <link rel="stylesheet" href="css/estilos.css"/>
     <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
     <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
@@ -20,36 +18,15 @@
     <header class="header">
         <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
         <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark">
-            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#opciones">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- logo -->
-            <a class="navbar-brand" href="index.html">
-              <img src="media/Logo_Rana.png" width="50px" alt="Imagen Logo">
-            </a>
-            <!-- enlaces -->
-            <div class="collapse navbar-collapse header__navigation2" id="opciones">   
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link itemmenu" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link itemmenu" href="quienes_somos.html">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link itemmenu" href="games.html">Games</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link itemmenu seleccionNav" href="novedades.html">Novedades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itemmenu" href="oportunidades.html">Oportunidades</a>
-                </li>             
-              </ul>
-            </div>
-          </nav>
+        <nav id="navGrande" class="header__navigation container-fluid">  
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>              
+                <li><a href="quienes_somos.html">Quienes somos</a></li>
+                <li><a href="games.html">Games</a></li>    
+                <li><a href="novedades.html" class="seleccionNav">Novedades</a></li>
+                <li><a href="oportunidades.html">Oportunidades</a></li>
+            </ul>
+        </nav>
     </header>
 
     <nav aria-label="breadcrumb">
@@ -60,25 +37,7 @@
         </ol>
     </nav>
     
-
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col col-md-12 col-sm-12 col-12 align-items-center">
-        <img src="media/gdc.jpg" class="img-fluid centraImagen" alt="gdc">
-        <h1 >Desarrolladores uruguayos de videojuegos en la “GDC2021”</h1>
-        <h3 >Se llevó adelante la Game Developers Conference 2021, el evento más grande de la industria Videojuegos</h3>
-        <p >
-            La conferencia que anualmente congrega a la comunidad de la industria de videojuegos, se llevó a cabo desde el 19 al 23 de julio de 2021. Las personas que participan año tras año pertenecen a diferentes áreas del sector, como lo son programadores, artistas, productores, diseñadores de juegos, profesionales de audio y líderes empresariales. <br>
-            El programa incluye actividades, durante cinco días y persigue los objetivos de intercambiar ideas, resolver problemas y proyectar el futuro de la industria a través de la educación, la inspiración y el networking.<br> Este año, nuestro país participó con una delegación de profesionales del sector, quienes fueron acompañados por Uruguay XXI y la Cámara de Desarrolladores de Videojuegos (CAVI).<br> Los desarrolladores y estudios seleccionados para representar a Uruguay durante el evento exhibieron durante estos días el potencial con el que cuenta la industria del país.<br> 
-            Uruguayos en la GDC 2021 A esta delegación la integraron tanto estudios como desarrolladores independientes, conócelos a continuación: ARF Game Studio; Bruno Ferrari; Eyratrin; Game Olic; Ironhide; Loop Studio; Mucho Games; Pincer Games; Pomelo Games; Rubber Duck Games; Sarnayer; Wise Shards. A través de su participación exhibieron las potencialidades de Uruguay, entre ellas la creatividad del sector en el país, así como el talento calificado y apasionado con el actualmente cuenta el sector.<br> 
-            Otras de las características que se resaltaron de Uruguay es la infraestructura tecnológica, que se destaca de manera mundial. Además, existe una gran comunidad colaborativa en el país, que, por ejemplo, lleva adelante eventos de desarrollo como el Level UY.<br> Cabe destacar que empresas internacionales, elijen a Uruguay como destino para sus centros de operaciones, lo que posiciona al país en un buen lugar para la mirada internacional. <br>
-            Laia Bee  Durante el evento se desarrolló el panel #1Reasontobe, un espacio en el que se plantea el tema diversidad en el mundo del gaming. El panel, este año contó con la organización de Laia Barboza (conocida en el sector como Laia Bee), quien cuenta con una gran e innovadora trayectoria, sobre todo en nuestro país. Laia, además de ser cofundadora de Princer Games (uno de los estudios más reconocidos en el país y que formó parte de la delegación en este GDC), fue elegida game changers por la Game Industry en el 2020.<br> 
-            Pero también fue parte clave de Girls in Tech Uruguay, en la asociación de desarrolladores (CAVI), como coordinadora de la Federación de Videojuego LATAM y como líder en el Global Game Jam.
-        </p>
-    </div>
-</div>
-    </div>
-    <!-- <div>
+    <div>
         <img src="media/gdc.jpg" class="centraImagen" alt="gdc">
         <h1 class="margenNot">Desarrolladores uruguayos de videojuegos en la “GDC2021”</h1>
         <h3 class="margenNot">Se llevó adelante la Game Developers Conference 2021, el evento más grande de la industria Videojuegos</h3>
@@ -90,7 +49,7 @@
             Laia Bee  Durante el evento se desarrolló el panel #1Reasontobe, un espacio en el que se plantea el tema diversidad en el mundo del gaming. El panel, este año contó con la organización de Laia Barboza (conocida en el sector como Laia Bee), quien cuenta con una gran e innovadora trayectoria, sobre todo en nuestro país. Laia, además de ser cofundadora de Princer Games (uno de los estudios más reconocidos en el país y que formó parte de la delegación en este GDC), fue elegida game changers por la Game Industry en el 2020.<br> 
             Pero también fue parte clave de Girls in Tech Uruguay, en la asociación de desarrolladores (CAVI), como coordinadora de la Federación de Videojuego LATAM y como líder en el Global Game Jam.
         </p>
-    </div> -->
+    </div>
         
     <footer class="footer footerFlex">    
         <div>
@@ -110,11 +69,6 @@
             </a>   
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-  
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
