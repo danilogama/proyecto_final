@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
+     <!-- Faticon -->
+     <link rel="icon" type="icon/png" href="media/Logo_Rana.png">
     <link rel="stylesheet" href="css/estilos.css"/>
     <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
     <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
@@ -16,59 +17,95 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
-        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
-        <nav id="navGrande" class="header__navigation container-fluid">  
-            <ul>  
-                <li><a href="index.html">Inicio</a></li>              
-                <li><a href="quienes_somos.html">Quienes somos</a></li>
-                <li><a href="games.html" class="seleccionNav">Games</a></li>    
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="oportunidades.html">Oportunidades</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark">
+            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="media/Logo_Rana.png" width="50px" alt="Imagen Logo">
+            </a>
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse header__navigation2" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu seleccionNav" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link itemmenu" href="oportunidades.html">Oportunidades</a>
+                </li>             
+              </ul>
+            </div>
+          </nav>
     </header>
-
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Games</li>
-        </ol>
-    </nav>
     
     <h1>Nuestros Juegos</h1> 
+    
+    <hr>
+    
+    <div class="container">
+        <div class="bloqueGame1">
+            <div class="row align-items-center">
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <img src="media/Reigns.png" alt="reigns" class="img-fluid">
+                </div>    
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <h3>Reigns</h3>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">
+                    <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns&hl=es_UY&gl=US"> <img  src="media/playstore.png" class="bordesRedondeados img-fluid"  alt="Imagen1"></a> 
+                </div>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">                       
+                            <a href="https://apps.apple.com/us/app/reigns/id1114127463"> <img  src="media/applestore.png" class="bordesRedondeados img-fluid" alt="Imagen11"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bloqueGame2">
+            <div class="row align-items-center">
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <img src="media/CodMobile.jpg" alt="reigns" class="img-fluid">
+                </div>    
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <h3>COD</h3>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">
+                    <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns&hl=es_UY&gl=US"> <img  src="media/playstore.png" class="bordesRedondeados img-fluid"  alt="Imagen1"></a> 
+                </div>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">                       
+                            <a href="https://apps.apple.com/us/app/reigns/id1114127463"> <img  src="media/applestore.png" class="bordesRedondeados img-fluid" alt="Imagen11"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="gridProductosGrande"  class="noticias">          
-        <img id="imagenProducto1" src="media/Reigns.jpg" class="bordesRedondeados" alt="Imagen1">
-        <div id="parrafoProducto1">  
-            <p class="noticias__parrafo noticias__parrafo--destacadas">Reigns</p>
+        <hr>
+
+        <div class="bloqueGame3">
+            <div class="row align-items-center">
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <img src="media/sonic.jpg" alt="reigns" class="img-fluid">
+                </div>    
+                <div class="col col-md-6 col-sm-12 col-12">
+                    <h3>Sonic</h3>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">
+                    <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns&hl=es_UY&gl=US"> <img  src="media/playstore.png" class="bordesRedondeados img-fluid"  alt="Imagen1"></a> 
+                </div>
+                    <div class="d-grid gap-4 col-6 col-md-12 mx-auto  img-max">                       
+                            <a href="https://apps.apple.com/us/app/reigns/id1114127463"> <img  src="media/applestore.png" class="bordesRedondeados img-fluid" alt="Imagen11"></a> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="imagenTienda1"> 
-            <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns&hl=es_UY&gl=US"> <img  src="media/playstore.png" class="bordesRedondeados" width=150px height=50px  alt="Imagen1"></a> 
-        </div>
-        <div id="imagenTienda11">   
-            <a href="https://apps.apple.com/us/app/reigns/id1114127463"> <img  src="media/applestore.png" class="bordesRedondeados" width=150px height=50px alt="Imagen1"></a> 
-        </div> 
-        <img id="imagenProducto2" src="media/CodMobile.jpg" class="bordesRedondeados" alt="Imagen2">
-        <div id="parrafoProducto2"> 
-            <p  class="noticias__parrafo noticias__parrafo--destacadas">Call of Duty</p> 
-        </div>
-        <div id="imagenTienda2"> <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter&hl=es_UY&gl=US"><img  src="media/playstore.png" class="bordesRedondeados" width=150px height=50px  alt="Imagen1"></a> 
-        </div>
-            <div id="imagenTienda22">   
-            <a href="https://apps.apple.com/us/app/call-of-duty-mobile/id1287282214"> <img  src="media/applestore.png" class="bordesRedondeados" width=150px height=50px alt="Imagen1"></a> 
-        </div> 
-        <img id="imagenProducto3" src="media/sonic.jpg" class="bordesRedondeados" alt="Imagen3">
-        <div id="parrafoProducto3"> 
-            <p  class="noticias__parrafo noticias__parrafo--destacadas">Sonic Racing</p>
-        </div>
-        <div id="imagenTienda3"> 
-            <a href="https://play.google.com/store/apps/details?id=com.adventuredash.kartboom&hl=es_UY&gl=US"><img  src="media/playstore.png" class="bordesRedondeados" width=150px height=50px  alt="Imagen1"></a> 
-        </div>
-        <div id="imagenTienda33">   
-            <a href="https://apps.apple.com/us/app/sonic-racing/id1358659909"> <img  src="media/applestore.png" class="bordesRedondeados" width=150px height=50px alt="Imagen1"></a> 
-        </div>         
-    </section> 
+    </div>
 
 
     <footer class="footer footerFlex">    
@@ -89,5 +126,12 @@
             </a>   
         </div>
     </footer>
+
+    <!-- scripts necesarios -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

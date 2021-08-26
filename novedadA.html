@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
+     <!-- Faticon -->
+     <link rel="icon" type="icon/png" href="media/Logo_Rana.png">
     <link rel="stylesheet" href="css/estilos.css"/>
     <meta name="description" content="Sitio de desarrolladores de videojuegos en donde encontraras novedades, entretenimiento y oportunidades!">
     <meta name="keywords"  content="GAMES, VIDEOJUEGOS, NOTICIAS, DESARROLLO">
@@ -15,37 +17,53 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="media/LogoDGames.png" alt="Imagen Logo"></a>
-        <button id="buttonIniciarSesion" type="button" class="buttonIniciarSesion btn btn-dark">Iniciar sesion</button>
-        <nav id="navGrande" class="header__navigation container-fluid">  
-            <ul>  
-                <li><a href="index.html">Inicio</a></li>              
-                <li><a href="quienes_somos.html">Quienes somos</a></li>
-                <li><a href="games.html">Games</a></li>    
-                <li><a href="novedades.html" class="seleccionNav">Novedades</a></li>
-                <li><a href="oportunidades.html">Oportunidades</a></li>
-            </ul>
-        </nav>
+       
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark">
+            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="media/Logo_Rana.png" width="50px" alt="Imagen Logo">
+            </a>
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse header__navigation2" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemmenu seleccionNav" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link itemmenu" href="oportunidades.html">Oportunidades</a>
+                </li>             
+              </ul>
+            </div>
+          </nav>
     </header>
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="novedades.html">Novedades</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Level UY</li>
-        </ol>
-    </nav>
-
-    <div>
-        <img src="media/Leveluy.jpg" class="centraImagen" alt="leveluy">
-        <h1 class="margenNot">Se realizó la edición 2020 del Level Uy</h1>
-        <h3 class="margenNot">Se llevó a cabo a través de talleres virtuales y su objetivo fue ofrecer contenidos de valor tanto para profesionales del desarrollo de videojuegos como para estudiantes.</h3>
-        <p class="margenNot">El pasado 9 de diciembre se desarrolló una nueva edición del Level Uy, uno de los eventos más importante de la industria del videojuego en Uruguay. <br> Debido al contexto actual, la edición 2020 consistió en la puesta en escena de cuatro workshops en formato online. Todos ellos estuvieron a cargo de talento nacional de las mejores empresas de Uruguay.<br> La jornada virtual fue organizada por la Cámara Uruguaya de Desarrolladores de Videojuegos, Miem-Dinatel, Uruguay XXI, Ministerio de Educación y Cultura, Ingenio y Antel.
-            En cada uno de los talleres participaron mayoritariamente estudiantes e integrantes de nuevos estudios de videojuegos.<br>Por otra parte, se destacó una fuerte presencia de personas que viven en el interior del país y también hubo participantes del exterior. <br>A primera hora, Lujan Mackinnon brindó el taller “CV Gamer. Cómo potenciar tu perfil” en el que explicó cómo se debe crear un CV competitivo por parte de estudiantes, egresados y desarrolladores que buscan insertarse en el mercado laboral.
-            En simultáneo, Matías Sniadower impartió “Intro a TileMaps: ventajas y buenas prácticas”, un taller introductorio al manejo de Tilemaps y sus ventajas al momento de generar contenido de manera más rápida, económica y performante.<br> Por la tarde, se llevaron a cabo otros dos talleres. El primero, denominado “Diseño de personajes para videojuegos. Ilustrando emociones”, estuvo a cargo de Macarena Campos y allí brindó a los participantes una aproximación al diseño de personajes.<br>
-            El otro taller llevó por nombre “Starter pack para idear y crear la música de tu videojuego”. Allí, Gonzalo Varela presentó sobre qué es lo que uno debe tener más presente al determinar la estética musical de un videojuego.</p>
-    </div>
-    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col col-md-12 col-sm-12 col-12 align-items-center">
+              <img src="media/Leveluy.jpg" class="img-fluid centraImagen" alt="leveluy">
+              <h1 >Se realizó la edición 2020 del Level Uy</h1>
+              <h3 >Se llevó a cabo a través de talleres virtuales y su objetivo fue ofrecer contenidos de valor tanto para profesionales del desarrollo de videojuegos como para estudiantes.</h3>
+              <p >El pasado 9 de diciembre se desarrolló una nueva edición del Level Uy, uno de los eventos más importante de la industria del videojuego en Uruguay. <br> <br> Debido al contexto actual, la edición 2020 consistió en la puesta en escena de cuatro workshops en formato online. Todos ellos estuvieron a cargo de talento nacional de las mejores empresas de Uruguay.<br> <br> La jornada virtual fue organizada por la Cámara Uruguaya de Desarrolladores de Videojuegos, Miem-Dinatel, Uruguay XXI, Ministerio de Educación y Cultura, Ingenio y Antel.
+                  En cada uno de los talleres participaron mayoritariamente estudiantes e integrantes de nuevos estudios de videojuegos.<br> <br>Por otra parte, se destacó una fuerte presencia de personas que viven en el interior del país y también hubo participantes del exterior. <br> <br>A primera hora, Lujan Mackinnon brindó el taller “CV Gamer. Cómo potenciar tu perfil” en el que explicó cómo se debe crear un CV competitivo por parte de estudiantes, egresados y desarrolladores que buscan insertarse en el mercado laboral.
+                  En simultáneo, Matías Sniadower impartió “Intro a TileMaps: ventajas y buenas prácticas”, un taller introductorio al manejo de Tilemaps y sus ventajas al momento de generar contenido de manera más rápida, económica y performante.<br> <br> Por la tarde, se llevaron a cabo otros dos talleres. El primero, denominado “Diseño de personajes para videojuegos. Ilustrando emociones”, estuvo a cargo de Macarena Campos y allí brindó a los participantes una aproximación al diseño de personajes.<br> <br>
+                  El otro taller llevó por nombre “Starter pack para idear y crear la música de tu videojuego”. Allí, Gonzalo Varela presentó sobre qué es lo que uno debe tener más presente al determinar la estética musical de un videojuego.
+              </p>
+            </div> 
+        </div>     
+    </div> 
  
     <footer class="footer footerFlex">    
         <div>
@@ -65,7 +83,11 @@
             </a>   
         </div>
     </footer>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <!-- scripts necesarios -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

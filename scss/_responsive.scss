@@ -65,3 +65,55 @@
     width: 50rem;    
     }
 }
+
+
+
+@media only screen and (min-width: 768px) {
+.fotterFinal{
+    
+    bottom: (100vh - 100vh);    
+    }
+
+}
+
+@media only screen and (max-width: 768px)  {
+
+    p {
+        font-size: 1.5rem; }
+
+        .button1{
+            width: 100px;
+            height: 25px;
+        }
+
+        .footer__iconos{
+            width: 20px;
+        }
+        .footer__logo{
+            width: 25px;
+        }
+        .footer__texto{
+            font-size: 1rem;
+        }
+        .footer__texto-mail{
+            font-size: 1rem;
+            margin: 0rem;
+        }
+
+        .TextoImagenPrincipal{
+            display: none;
+            
+        }
+        .Texto2ImagenPrincipal{
+            display: none;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 3.5rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+}

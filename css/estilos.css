@@ -2,27 +2,25 @@
 /*Paleta de colores*/
 /*Font Size titulos*/
 /*Caja parrafos */
-/*Tamaño de logos*/
 /*Paleta de colores*/
 /*Font Size titulos*/
 /*Caja parrafos */
-/*Tamaño de logos*/
 * {
   Margin: 0;
   padding: 0; }
 
 body {
-  background-color: #FFEED9; }
+  background-color: black; }
 
 .header {
-  background-color: #C7B9A9;
+  background-color: black;
   margin-bottom: 1rem; }
 
 .header__logo {
   width: 130px; }
 
 .header__navigation {
-  background-color: #FBC88A;
+  background-color: #0c0c0c;
   align-content: center;
   align-items: center;
   text-align: center; }
@@ -36,34 +34,57 @@ body {
       margin-top: 1rem; }
       .header__navigation ul li a {
         list-style-position: outside;
-        color: #7A6243;
+        color: #08d6dd;
         font-size: 1.5rem;
         text-decoration: none;
         padding: 0.5rem;
         font-weight: bold; }
       .header__navigation ul li a:hover {
-        background-color: #FFEED9;
+        background-color: #09f7eb;
+        color: black !important;
         border-radius: 1rem; }
 
-.seleccionNav {
-  background-color: #FFEED9;
-  border-radius: 1rem; }
+/*--- MENU HAMBURGUESA ---*/
+.header__navigation2 {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  justify-self: center; }
+  .header__navigation2 a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold; }
+  .header__navigation2 a:hover {
+    background-color: #09f7eb;
+    border-radius: 1rem;
+    color: black !important; }
+
+.bg-info {
+  background-color: #09f7eb !important;
+  margin-left: 0.5rem; }
 
 .footer {
-  background-color: #C7B9A9;
+  background-color: #09f7eb;
   margin-top: 1rem;
   padding: 1rem;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  justify-content: center; }
 
 #contenedor {
-  min-height: calc(100vh - 170px); }
+  min-height: calc(100vh - 200px); }
 
 .footer__iconos {
-  width: 35px; }
+  width: 35px;
+  justify-content: center;
+  display: inline-block; }
 
 .footer__logo {
-  width: 65px; }
+  width: 30px; }
 
 .footer__texto {
   font-weight: bold;
@@ -71,21 +92,23 @@ body {
   font-size: 1.5rem; }
 
 .footer__texto-mail {
-  display: inline-block; }
+  display: inline-block;
+  color: black; }
 
 .footerFlex {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  align-items: center; }
 
 .noticias {
   font-family: 'Prompt', sans-serif; }
 
 .noticias__parrafo {
   margin: 1rem;
-  color: #7A6243;
+  color: #08d6dd;
   line-height: 1.5;
   text-align: left;
   padding: 2rem; }
@@ -93,52 +116,40 @@ body {
 .noticias__parrafo--destacadas {
   font-style: oblique;
   font-size: large;
-  background-color: #FBC88A; }
+  background-color: #0c0c0c; }
 
-.sobreNosotros {
-  font-style: normal; }
+.img-max {
+  max-width: 150px;
+  margin: 1rem; }
 
-.sobreNosotros__parrafo {
-  width: 45rem;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 2rem; }
+.agrandarImagen {
+  transition: all 0.3s; }
 
-.sobreNosotros__imagen {
-  justify-self: center;
-  align-self: center; }
+.agrandarImagen:hover {
+  transform: scale(1.1, 1.1); }
+
+a {
+  text-align: center; }
 
 .blog__busqueda {
   clear: right;
   margin-left: 100rem;
   margin-top: 1rem;
-  color: #7A6243;
+  color: #08d6dd;
   font-size: 1.4rem; }
 
 .blog__parrafo {
   font-size: 1.8rem; }
 
-.contacto__form {
-  background-color: #FBC88A; }
-
-.contacto__form--button {
-  padding: 0.5rem;
-  background-color: #C7B9A9;
-  border-radius: 0.5rem; }
-
-.contacto__parrafo {
-  width: 26rem;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin: 1rem; }
-
-p {
-  margin: 1rem; }
+.margenp {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 h1 {
   text-align: center;
   font-size: 8rem;
-  margin: 2rem; }
+  margin: 2rem;
+  margin-top: 8rem; }
 
 h2 {
   text-align: center;
@@ -163,7 +174,6 @@ h2 {
   max-height: 700px; }
 
 /*------------------Index---------------*/
-/*CAMBIAR NOMBRES*/
 #imagenPrincipal {
   width: 75%;
   margin-bottom: 1rem;
@@ -174,22 +184,27 @@ h2 {
   display: block;
   margin: auto;
   text-align: center;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  margin-top: 10rem; }
 
 .TextoImagenPrincipal {
   position: absolute;
   top: 1%;
   left: 14%;
-  color: white; }
+  color: white;
+  font-family: 'Mitr', sans-serif;
+  font-weight: bold 700; }
 
 .Texto2ImagenPrincipal {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 14%;
   margin-top: 1rem;
   transform: translate(0%, -50%);
   color: white;
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-family: 'Mitr', sans-serif;
+  font-weight: bold 700; }
 
 /*-----Usando FOR--------*/
 #mediaIndex1 {
@@ -356,37 +371,6 @@ h2 {
   width: 30rem;
   font-size: 1.5rem; }
 
-/*------------------Sobre nosotros---------------*/
-#gridSobreNosotros2 {
-  display: grid;
-  justify-content: center;
-  grid-template-areas: "mediaSobreNosotos parrafoSobreNosotros";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem; }
-
-#imagenSobreNosotros {
-  grid-area: imagenSobreNosotros;
-  justify-self: center;
-  align-self: center;
-  margin: 1rem;
-  width: 1080px;
-  height: 500px; }
-
-#parrafoSobreNosotros {
-  grid-area: parrafoSobreNosotros;
-  justify-self: start;
-  font-size: 1.5rem; }
-
-#mediaSobreNosotos {
-  grid-area: mediaSobreNosotos;
-  justify-self: end;
-  align-self: center;
-  margin: 1rem;
-  width: 500px;
-  height: 315px; }
-
 /*------------------Novedades---------------*/
 #gridNovedades {
   display: grid;
@@ -448,49 +432,54 @@ h2 {
 
 .centraImagen {
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-top: 8rem; }
 
 /*------------------Oportunidades---------------*/
-#gridOportunidades {
-  display: grid;
-  justify-content: center;
-  grid-template-areas: "formularioContacto  textoOport1" "formularioContacto textoOport2";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 3rem;
-  grid-row-gap: 1rem;
-  margin-top: 3rem; }
-
-#formularioOportunidades {
-  grid-area: formularioContacto;
-  justify-self: end;
-  align-self: top;
-  margin: 1rem;
-  width: 300px;
-  height: 350px; }
-
-#textoOport1 {
-  grid-area: textoOport1;
-  justify-self: start;
-  align-self: center;
-  margin: 1rem;
-  font-size: 4rem;
-  width: 400px;
-  height: 200px; }
-
-#textoOport2 {
-  grid-area: textoOport2;
-  justify-self: start; }
-
 form {
-  font-size: 1rem;
-  padding: 3rem; }
+  color: white; }
+
+.areaContacto .textoFormulario {
+  width: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.areaContacto form {
+  line-height: 1rem; }
+
+.areaContacto h2 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 5rem;
+  font-size: 6rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+
+.areaContacto p {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: initial;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem; }
+
+.areaContacto label {
+  font-size: 2rem;
+  line-height: 2rem; }
+
+.inputFormulario {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  transition: width 0.5s, height 0.5s; }
 
 .largolabel {
   width: 40px;
-  margin: 1rem; }
-
-.margenbox {
   margin: 1rem; }
 
 .enviarFormulario {
@@ -503,14 +492,136 @@ form {
   margin-left: 13rem;
   width: 5rem; }
 
-/*------------------Error 404---------------*/
+/*--- Error 404 ---*/
 #imagenError {
   float: left;
   width: 200px; }
 
+p {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: initial;
+  margin: 1rem;
+  letter-spacing: 1px; }
+
+h1 {
+  color: #08d6dd; }
+
+h2 {
+  color: #08d6dd; }
+
+h3 {
+  color: #09f7eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0px; }
+
+form label {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+form textarea {
+  width: 100%; }
+
+/* boton form oportunidades*/
+.button1 {
+  color: black;
+  background-color: #09f7eb;
+  width: 150px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  justify-self: center;
+  font-size: 1.2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 1rem; }
+  .button1 a {
+    color: black;
+    text-decoration: none; }
+
+.bloqueGames {
+  margin: 4rem; }
+
+.bloqueNovedades {
+  margin: 4rem; }
+
+.bloqueOportunidades {
+  margin: 4rem; }
+
+.itemmenu {
+  text-decoration: none;
+  color: #09f7eb !important; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #09f7eb; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black; }
+
+.navbar-toggler {
+  color: #09f7eb !important; }
+
+.fondoColor {
+  color: #09f7eb;
+  z-index: 1000; }
+
+/*boton ver mas*/
+.button2 {
+  color: black;
+  background-color: #09f7eb;
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  justify-self: center;
+  margin: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem; }
+
+.seleccionNav {
+  background-color: #09f7eb;
+  border-radius: 1rem;
+  color: black !important; }
+
+.navbar-nav > li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.align-items-center {
+  align-items: center !important;
+  margin: 5rem; }
+
+.card-group {
+  margin: 1rem; }
+
+.card-group > .card {
+  margin-right: 1rem; }
+
+.align-items-center {
+  margin: 0rem !important; }
+
+hr {
+  color: white; }
+
 html {
-  font-family: 'Prompt', sans-serif;
   font-size: 62.5%; }
+
+body {
+  font-family: 'Mitr', sans-serif; }
 
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
@@ -562,3 +673,33 @@ html {
   #parrafoIndex2 {
     justify-self: start;
     width: 50rem; } }
+
+@media only screen and (min-width: 768px) {
+  .fotterFinal {
+    bottom: 0vh; } }
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1.5rem; }
+  .button1 {
+    width: 100px;
+    height: 25px; }
+  .footer__iconos {
+    width: 20px; }
+  .footer__logo {
+    width: 25px; }
+  .footer__texto {
+    font-size: 1rem; }
+  .footer__texto-mail {
+    font-size: 1rem;
+    margin: 0rem; }
+  .TextoImagenPrincipal {
+    display: none; }
+  .Texto2ImagenPrincipal {
+    display: none; }
+  h3 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 3.5rem; }
+  h1 {
+    font-size: 4rem; } }
