@@ -236,8 +236,9 @@ h2{
     // top: 1%; 
     // left: 14%;
     color: white;
-    font-family:'Mitr', sans-serif;
-    font-weight: bold 700;
+    //font-family:'Mitr', sans-serif;
+    //font-weight: bold 700;
+    font-weight: 700;
 }
 /*
 .Texto2ImagenPrincipal{
@@ -568,7 +569,7 @@ p{
     text-align: left;
     text-transform: initial;
     margin: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 h1{
@@ -812,5 +813,5 @@ hr{
 
 
   .contQuienesSomos{
-      margin-top: 7rem;
+      margin-top: 5rem;
   }

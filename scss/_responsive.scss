@@ -17,9 +17,18 @@
     width: 40rem;
     font-size: 1.4rem;        
     }
-    *{
-       // font-size: 90%;
+    .textoImagenPrincipal{
+
+        font-size: 2.5rem;
     }
+    .containerMovil {
+        top: 4rem!important;
+        
+     }
+     
+    //*{
+       // font-size: 90%;
+    //}
 }
 /*---TABLET---*/
 @media only screen and (min-width: 600px) {    
@@ -38,6 +47,10 @@
     #parrafoIndex2 { 
     width: 50rem;
     font-size: 1.8rem;        
+    }
+    .textoImagenPrincipal{
+
+        font-size: 3.5rem;
     }
 }
 

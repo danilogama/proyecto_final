@@ -204,8 +204,7 @@ h2 {
 
 .TextoImagenPrincipal {
   color: white;
-  font-family: 'Mitr', sans-serif;
-  font-weight: bold 700; }
+  font-weight: 700; }
 
 /*
 .Texto2ImagenPrincipal{
@@ -516,7 +515,7 @@ p {
   text-align: left;
   text-transform: initial;
   margin: 1rem;
-  letter-spacing: 1px; }
+  letter-spacing: 0.5px; }
 
 h1 {
   color: #08d6dd; }
@@ -711,13 +710,13 @@ hr {
   margin: auto; }
 
 .contQuienesSomos {
-  margin-top: 7rem; }
+  margin-top: 5rem; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Mitr', sans-serif; }
+  font-family: 'Poppins', sans-serif; }
 
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
@@ -733,7 +732,11 @@ body {
     width: 400px; }
   #parrafoIndex2 {
     width: 40rem;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .textoImagenPrincipal {
+    font-size: 2.5rem; }
+  .containerMovil {
+    top: 4rem !important; } }
 
 /*---TABLET---*/
 @media only screen and (min-width: 600px) {
@@ -748,7 +751,9 @@ body {
     width: 540px; }
   #parrafoIndex2 {
     width: 50rem;
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .textoImagenPrincipal {
+    font-size: 3.5rem; } }
 
 /*---DESKTOP---*/
 @media only screen and (min-width: 1150px) {
