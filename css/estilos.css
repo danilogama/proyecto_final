@@ -63,7 +63,7 @@ nav a img:hover {
   justify-self: center; }
   .header__navigation2 a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
     padding: 0.5rem;
     font-weight: bold; }
@@ -206,18 +206,6 @@ h2 {
   color: white;
   font-weight: 700; }
 
-/*
-.Texto2ImagenPrincipal{
-    position: absolute;
-    top: 60%;
-    left: 14%;
-    margin-top: 1rem;
-    transform: translate(0%, -50%);
-    color: white;
-    font-size: 4rem;
-    font-family:'Mitr', sans-serif;
-    font-weight: bold 700;
-}*/
 /*-----Usando FOR--------*/
 #mediaIndex1 {
   grid-area: mediaIndex1;
@@ -504,41 +492,6 @@ form {
   margin-left: 13rem;
   width: 5rem; }
 
-/*--- Error 404 ---*/
-#imagenError {
-  float: left;
-  width: 200px; }
-
-p {
-  color: white;
-  font-size: 2rem;
-  text-align: left;
-  text-transform: initial;
-  margin: 1rem;
-  letter-spacing: 0.5px; }
-
-h1 {
-  color: #08d6dd; }
-
-h2 {
-  color: #08d6dd; }
-
-h3 {
-  color: #09f7eb;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 5rem;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 0px; }
-
-form label {
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-form textarea {
-  width: 100%; }
-
 /* boton form oportunidades*/
 .button1 {
   width: 150px;
@@ -570,6 +523,43 @@ form textarea {
   .button1:hover a {
     color: white;
     text-decoration: none; }
+
+/*--- Error 404 ---*/
+#imagenError {
+  float: left;
+  width: 200px; }
+
+p {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: initial;
+  margin: 1rem;
+  letter-spacing: 0.5px; }
+
+h1 {
+  color: #08d6dd; }
+
+h2 {
+  color: #08d6dd; }
+
+h3 {
+  color: #09f7eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0px;
+  font-style: italic;
+  margin: 3rem; }
+
+form label {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+form textarea {
+  width: 100%; }
 
 .bloqueGames {
   margin: 4rem; }
@@ -680,8 +670,6 @@ hr {
 .iconoStore {
   text-align: center; }
 
-/*  PRUEBAS */
-/*pruebas imagen index1 */
 .containerImagenPrincipal {
   position: relative; }
 
@@ -691,7 +679,15 @@ hr {
   left: 20px;
   color: white;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .containerMovil {
   margin-top: 2rem;
@@ -720,7 +716,7 @@ body {
 
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 260px) {
   #parrafoIndex1 {
     justify-self: center;
     width: 40rem;
@@ -738,8 +734,36 @@ body {
   .containerMovil {
     top: 4rem !important; } }
 
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1.5rem; }
+  .button1 {
+    width: 100px;
+    height: 25px; }
+  .footer__iconos {
+    width: 20px; }
+  .footer__logo {
+    width: 25px; }
+  .footer__texto {
+    font-size: 1rem; }
+  .footer__texto-mail {
+    font-size: 1rem;
+    margin: 0rem; }
+  h3 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 3.5rem; }
+  h1 {
+    font-size: 4rem; }
+  .containerImagenPrincipal {
+    display: none; } }
+
 /*---TABLET---*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+  .fotterFinal {
+    bottom: 0vh; }
+  .containerMovil {
+    display: none; }
   #parrafoIndex1 {
     justify-self: center;
     width: 50rem;
@@ -773,36 +797,4 @@ body {
     width: 540px; }
   #parrafoIndex2 {
     justify-self: start;
-    width: 50rem; }
-  .containerMovil {
-    display: none; } }
-
-@media only screen and (min-width: 768px) {
-  .fotterFinal {
-    bottom: 0vh; }
-  .containerMovil {
-    display: none; } }
-
-@media only screen and (max-width: 768px) {
-  p {
-    font-size: 1.5rem; }
-  .button1 {
-    width: 100px;
-    height: 25px; }
-  .footer__iconos {
-    width: 20px; }
-  .footer__logo {
-    width: 25px; }
-  .footer__texto {
-    font-size: 1rem; }
-  .footer__texto-mail {
-    font-size: 1rem;
-    margin: 0rem; }
-  .containerImagenPrincipal {
-    display: none; }
-  h3 {
-    font-size: 3rem; }
-  h2 {
-    font-size: 3.5rem; }
-  h1 {
-    font-size: 4rem; } }
+    width: 50rem; } }

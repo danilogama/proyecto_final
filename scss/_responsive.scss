@@ -1,6 +1,6 @@
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
-@media only screen and (min-width: 450px) { 
+@media only screen and (min-width: 260px) { 
     #parrafoIndex1 {
     justify-self: center; 
     width: 40rem;
@@ -22,33 +22,80 @@
         font-size: 2.5rem;
     }
     .containerMovil {
-        top: 4rem!important;
-        
+        top: 4rem!important;        
      }
 }
-/*---TABLET---*/
-@media only screen and (min-width: 600px) {    
-    #parrafoIndex1 {
-    justify-self: center; 
-    width: 50rem;
-    font-size: 1.8rem;        
-    }
-    #mediaIndex1 {
-    width:540px;
-    height:300px;
-    }
-    #mediaIndex2 {
-    width:540px;
-    }     
-    #parrafoIndex2 { 
-    width: 50rem;
-    font-size: 1.8rem;        
-    }
-    .textoImagenPrincipal{
 
-        font-size: 3.5rem;
-    }
+
+@media only screen and (max-width: 768px)  { //de 0 a 768px
+    
+    p {
+        font-size: 1.5rem; }
+
+        .button1{
+            width: 100px;
+            height: 25px;
+        }
+
+        .footer__iconos{
+            width: 20px;
+        }
+        .footer__logo{
+            width: 25px;
+        }
+        .footer__texto{
+            font-size: 1rem;
+        }
+        .footer__texto-mail{
+            font-size: 1rem;
+            margin: 0rem;
+        }
+
+        h3{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 3.5rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        .containerImagenPrincipal{
+            display: none;
+        }
 }
+
+
+/*---TABLET---*/
+@media only screen and (min-width: 768px) { //de 768 en adelante
+    .fotterFinal{    
+    bottom: (100vh - 100vh);    
+    }
+    .containerMovil{
+        display: none;
+    }
+
+    #parrafoIndex1 {
+        justify-self: center; 
+        width: 50rem;
+        font-size: 1.8rem;        
+        }
+        #mediaIndex1 {
+        width:540px;
+        height:300px;
+        }
+        #mediaIndex2 {
+        width:540px;
+        }     
+        #parrafoIndex2 { 
+        width: 50rem;
+        font-size: 1.8rem;        
+        }
+        .textoImagenPrincipal{
+            font-size: 3.5rem;
+        }
+}    
+
 
 /*---DESKTOP---*/
 @media only screen and (min-width: 1150px) {
@@ -76,60 +123,5 @@
     justify-self: start; 
     width: 50rem;    
     }
-    .containerMovil{
-        display: none;
-    }
 }
 
-
-
-@media only screen and (min-width: 768px) {
-.fotterFinal{
-    
-    bottom: (100vh - 100vh);    
-    }
-    .containerMovil{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 768px)  {
-
-    p {
-        font-size: 1.5rem; }
-
-        .button1{
-            width: 100px;
-            height: 25px;
-        }
-
-        .footer__iconos{
-            width: 20px;
-        }
-        .footer__logo{
-            width: 25px;
-        }
-        .footer__texto{
-            font-size: 1rem;
-        }
-        .footer__texto-mail{
-            font-size: 1rem;
-            margin: 0rem;
-        }
-
-        .containerImagenPrincipal{
-            display: none;
-            
-        }
-
-
-        h3{
-            font-size: 3rem;
-        }
-        h2{
-            font-size: 3.5rem;
-        }
-        h1{
-            font-size: 4rem;
-        }
-}
