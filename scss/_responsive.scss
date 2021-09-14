@@ -1,6 +1,6 @@
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
-@media only screen and (min-width: 450px) {    
+@media only screen and (min-width: 450px) { 
     #parrafoIndex1 {
     justify-self: center; 
     width: 40rem;
@@ -16,6 +16,9 @@
     #parrafoIndex2 { 
     width: 40rem;
     font-size: 1.4rem;        
+    }
+    *{
+       // font-size: 90%;
     }
 }
 /*---TABLET---*/
@@ -64,6 +67,9 @@
     justify-self: start; 
     width: 50rem;    
     }
+    .containerMovil{
+        display: none;
+    }
 }
 
 
@@ -73,7 +79,9 @@
     
     bottom: (100vh - 100vh);    
     }
-
+    .containerMovil{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
@@ -100,13 +108,12 @@
             margin: 0rem;
         }
 
-        .TextoImagenPrincipal{
+        .containerImagenPrincipal{
             display: none;
             
         }
-        .Texto2ImagenPrincipal{
-            display: none;
-        }
+
+
         h3{
             font-size: 3rem;
         }

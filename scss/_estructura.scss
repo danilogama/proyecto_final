@@ -35,15 +35,26 @@ body{
                 text-decoration: none;     
                 padding: 0.5rem;
                 font-weight: bold;
+                transition: 3ms;
             }
             a:hover{
                 background-color: $colorCeleste;
                 color: black !important;
             
                 border-radius: 1rem;
+                transform:scale(2)
             }
         }
     }
+}
+
+nav a img{
+    
+    transition: all 0.3s;
+}
+nav a img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 /*--- MENU HAMBURGUESA ---*/
 .header__navigation2{
@@ -90,6 +101,11 @@ body{
    width:  35px;   
    justify-content: center;
    display: inline-block;
+   transition: 2ms;
+}
+.footer__iconos:hover{
+    transition: 2ms;
+    transform: scale(1.1);
 }
 .footer__logo{
     width: 30px;
@@ -202,6 +218,7 @@ h2{
     width: 75%;
     margin-bottom: 1rem;
     max-height: 500px;
+    margin-top: 10rem;
 }
   
 #contenedorImagenPrincipal {
@@ -215,14 +232,14 @@ h2{
 
 
 .TextoImagenPrincipal {
-    position: absolute;
-    top: 1%; 
-    left: 14%;
+    // position: absolute;
+    // top: 1%; 
+    // left: 14%;
     color: white;
     font-family:'Mitr', sans-serif;
     font-weight: bold 700;
 }
-
+/*
 .Texto2ImagenPrincipal{
     position: absolute;
     top: 60%;
@@ -233,7 +250,7 @@ h2{
     font-size: 4rem;
     font-family:'Mitr', sans-serif;
     font-weight: bold 700;
-}
+}*/
 
 /*-----Usando FOR--------*/
 @for $i from 1 through 2 {
@@ -473,7 +490,8 @@ h2{
     width: 75rem;
 }
 
-.centraImagen{display:block;
+.centraImagen{
+    display:block;
     margin:auto;
     margin-top: 8rem;
 }
@@ -580,8 +598,6 @@ form textarea{
 
 /* boton form oportunidades*/
 .button1{
-    color: black;
-    background-color: $colorCeleste;
     width: 150px;
     height: 35px;
     justify-content: center;
@@ -595,8 +611,26 @@ form textarea{
     border: none; 
     font-weight: bold;
     border-radius: 1rem;
+    transition: all 0.4s;
+    
+    color: black;
+    background-color: $colorCeleste;
+
     a{
         color: black;
+        text-decoration: none;   
+    }
+}
+
+.button1:hover{
+    background-color: black;
+    border: 2px solid $colorCeleste;
+    border-color: $colorCeleste;
+    //transform: scale(1.3);
+    width: 180px;
+    transition: all 0.3s;
+    a{
+        color: white;
         text-decoration: none;   
     }
 }
@@ -604,19 +638,36 @@ form textarea{
 .bloqueGames{
     margin: 4rem;
 }
+.bloqueGames img{
+    transition:all 0.3s;
+}
+.bloqueGames img:hover{
+    transition:all 0.3s;
+    transform: scale(1.1);
+}
+
 .bloqueNovedades{
     margin: 4rem;
+}
+
+.bloqueNovedades img:hover{
+    transition:all 0.3s;
+    transform: scale(1.1);
 }
 .bloqueOportunidades{
     margin: 4rem;
 }
-
+.bloqueOportunidades img:hover{
+    transition:all 0.3s;
+    transform: scale(1.1);
+}
 .itemmenu{
     text-decoration: none;
     color: $colorCeleste!important;
 }
 .navbar-light .navbar-nav .nav-link{
     color:$colorCeleste ;
+    border-radius: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -651,6 +702,15 @@ form textarea{
     border-radius: 1rem;
 }
 
+.button2:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid $colorCeleste;
+    border-color: $colorCeleste;
+}
+
+
+
 
 .seleccionNav{
     background-color: $colorCeleste;
@@ -676,10 +736,81 @@ form textarea{
     margin-right: 1rem;
 }
 
+.modal-content{
+    min-height: 300px!important;
+    min-width: 300px!important;
+}
+
 .align-items-center{
     margin: 0rem !important;;
 }
 
 hr{
     color: white;
+    border: 1px solid white;
 }
+
+.imagenZoom{
+    transition: all 1s;
+}
+.imagenZoom:hover{
+    
+    transform: scale(0.8);
+    transition: all 1s;
+}
+
+
+
+.enlace{
+    font-size: 1.5rem;
+}
+
+
+.iconoStore{
+
+    text-align: center;
+}
+/*  PRUEBAS */
+
+/*pruebas imagen index1 */
+.containerImagenPrincipal {
+    position: relative;
+  }
+  
+  .text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    //background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .containerMovil {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+     }
+
+
+  
+  .text-blockMovil {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+
+
+
+  .contQuienesSomos{
+      margin-top: 7rem;
+  }

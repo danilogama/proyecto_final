@@ -67,20 +67,46 @@
                 <label for="celular">Celular: </label> <br><br>
                 <input type="text" id="whatsapp" name="whatsapp" class="inputFormulario"><br><br>
                 <label for="Email">Email:</label> <br><br>
-                <input type="text" id="email" name="email" class="inputFormulario"><br><br>              
+                <input type="text" id="email" name="email" class="inputFormulario"><br><br>
+                <!-- <label for="Link">Link:</label> <br><br>
+                <input type="text" id="link" name="link" class="inputFormulario"><br><br>  -->             
                 <label for="Email">Mensaje:</label> <br><br>
                 <textarea class="margenbox" style="resize:none" name="mensaje" rows="6" ></textarea><br><br>
                 <hr>        
                 <input type="reset" value="Limpiar" class="button2">
-                <input type="submit" value="Enviar" class="button2">
+                <!-- <input type="submit" value="Enviar" class="button2"> -->
+                <a href="#enviarModal" role="button" data-toggle="modal"><button type="button" class="btn btn-default button2">Enviar</button></a>
               </form>
             </div>
         </div>
     </div>
 
+        <!-- Botón en HTML (lanza el modal en Bootstrap)
+    <a href="#enviarModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">Enviar</a> -->
+      
+    <!-- Modal / Ventana / Overlay en HTML -->
+    <div id="enviarModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <h4 class="modal-title">Muchas Gracias!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-dark"><small>Recibirás nuestra respuesta a la brevedad &#128512</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default button2" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
     <footer class="footer footerFlex fotterFinal">    
         <div>
-            <img class="footer__logo" src="media/LogoDGames.png" alt="Imagen Logo">
+            <img class="footer__logo" src="media/Logo_Rana.png" alt="Imagen Logo">
             <h5 class="footer__texto">Copyright 2021</h5> 
         </div>
         <div>
