@@ -291,6 +291,13 @@ a {
   margin: auto;
   margin-top: 8rem; }
 
+.bloqueOportunidades {
+  margin: 4rem; }
+
+.bloqueOportunidades img:hover {
+  transition: all 0.3s;
+  transform: scale(1.1); }
+
 /*---------------- OPORTUNIDADES ---------------------*/
 form {
   color: white; }
