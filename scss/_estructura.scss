@@ -177,16 +177,7 @@ a {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }    
-h1{
-    text-align: center;
-    font-size: $fontSizeTitulo;
-    margin: 2rem;
-    margin-top: 8rem;
-}
-h2{
-    text-align: center;
-    font-size: ($fontSizeTitulo - 2rem);    
-}
+
 
 .bordesNegros{
     -webkit-text-stroke: 2px black;
@@ -229,10 +220,18 @@ h2{
     margin-top: 10rem;
 }
 
-
-.TextoImagenPrincipal {
+.tituloImagenPrincipal{    
+    color: white;
+    font-family: 'Alegreya', serif;
+}
+.subtituloImagenPrincipal {
+    color: white;
+    font-family: 'Alegreya', serif;
+}
+.TextoImagenPrincipalMovil {
     color: white;
     font-weight: 700;
+    font-family: 'Alegreya', serif;
 }
 
 /*-----Usando FOR--------*/
@@ -569,18 +568,9 @@ form {
     border: 2px solid $colorCeleste;
     border-color: $colorCeleste;
     width: 180px;
-    transition: all 0.3s;
-    a{
-        color: white;
-        text-decoration: none;   
-    }
+    transition: all 0.3s;    
+    color: white;
 }
-
-/*--- Error 404 ---*/
-#imagenError{
-    float: left;
-    width: 200px;
-}  
 
 p{
     color: white;
@@ -592,22 +582,25 @@ p{
 }
 
 h1{
-    color: $colorFontParrafo;
+    color: $colorFontParrafo;    
+    text-align: center;
+    margin: 2rem;
+    margin-top: 8rem;
+    font-weight: bold;
 }
 
 h2{
-    color: $colorFontParrafo;
+    color: $colorFontParrafo;    
+    text-align: center;
+      
 }
 h3{
-    color: $colorCeleste;    
-    font-weight: 700;
+    color: $colorCeleste;  
     text-transform: uppercase;
     line-height: 5rem;
-    font-size: 4rem;
     text-align: center;
     margin-top: 0px;
     font-style: italic;
-    margin: 3rem;
 }
 
 form label {
@@ -740,8 +733,6 @@ hr{
     transition: all 1s;
 }
 
-
-
 .enlace{
     font-size: 1.5rem;
 }
@@ -754,40 +745,38 @@ hr{
 
 .containerImagenPrincipal {
     position: relative;
-  }
-  
-  .text-block {
+}
+
+.text-block {
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    
+
     animation-duration: 4s;
     animation-name: aparecer;    
-  }
+}
 
-    @keyframes aparecer {
-        0% {
-        opacity: 0;
-        }
-        100% {
-        opacity: 1;
-        }
-  }
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
 
-  .containerMovil {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        display: flex;
-        flex-direction: column;
-        position:relative;
-     }
-
-
+.containerMovil {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
   
-  .text-blockMovil {
+.text-blockMovil {
     color: white;
     position: absolute;
     top: 20%;
@@ -795,8 +784,15 @@ hr{
     right: 0;
     bottom: 0;
     margin: auto;
-  }
+}
 
-  .contQuienesSomos{
-      margin-top: 5rem;
-  }
+.contQuienesSomos{
+    margin-top: 5rem;
+}
+
+  
+/*--- Error 404 ---*/
+#imagenError{
+    text-align: center;
+    //margin-top: 5rem;
+}  

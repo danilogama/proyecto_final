@@ -1,6 +1,6 @@
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
-@media only screen and (min-width: 260px) { 
+@media only screen and (min-width: 240px) { 
     #parrafoIndex1 {
     justify-self: center; 
     width: 40rem;
@@ -17,111 +17,102 @@
     width: 40rem;
     font-size: 1.4rem;        
     }
-    .textoImagenPrincipal{
-
+    .textoImagenPrincipalMovil{
         font-size: 2.5rem;
     }
     .containerMovil {
         top: 4rem!important;        
-     }
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
 }
 
-
-@media only screen and (max-width: 768px)  { //de 0 a 768px
-    
+@media only screen and (max-width: 768px)  {    
     p {
-        font-size: 1.5rem; }
-
-        .button1{
-            width: 100px;
-            height: 25px;
-        }
-
-        .footer__iconos{
-            width: 20px;
-        }
-        .footer__logo{
-            width: 25px;
-        }
-        .footer__texto{
-            font-size: 1rem;
-        }
-        .footer__texto-mail{
-            font-size: 1rem;
-            margin: 0rem;
-        }
-
-        h3{
-            font-size: 3rem;
-        }
-        h2{
-            font-size: 3.5rem;
-        }
-        h1{
-            font-size: 4rem;
-        }
-        .containerImagenPrincipal{
-            display: none;
-        }
+        font-size: 1.5rem; 
+    }
+    .button1{
+        width: 100px;
+        height: 25px;
+    }
+    .footer__iconos{
+        width: 20px;
+    }
+    .footer__logo{
+        width: 25px;
+    }
+    .footer__texto{
+        font-size: 1rem;
+    }
+    .footer__texto-mail{
+        font-size: 1rem;
+        margin: 0rem;
+    }
+    .containerImagenPrincipal{
+        display: none;
+    }
 }
 
+@media only screen and (min-width: 500px){
+    h3{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+}
 
 /*---TABLET---*/
-@media only screen and (min-width: 768px) { //de 768 en adelante
+@media only screen and (min-width: 769px) { 
     .fotterFinal{    
-    bottom: (100vh - 100vh);    
+        bottom: (100vh - 100vh);    
     }
     .containerMovil{
         display: none;
     }
-
     #parrafoIndex1 {
         justify-self: center; 
         width: 50rem;
         font-size: 1.8rem;        
-        }
-        #mediaIndex1 {
+    }
+    #mediaIndex1 {
         width:540px;
         height:300px;
-        }
-        #mediaIndex2 {
+    }
+    #mediaIndex2 {
         width:540px;
-        }     
-        #parrafoIndex2 { 
+    }     
+    #parrafoIndex2 { 
         width: 50rem;
         font-size: 1.8rem;        
-        }
-        .textoImagenPrincipal{
-            font-size: 3.5rem;
-        }
-}    
-
+    }
+    .tituloImagenPrincipal{
+        font-size: 5rem;
+        text-align: left;
+    }
+    .subtituloImagenPrincipal{
+        font-size: 3rem;
+        text-align: left;
+    }
+}
 
 /*---DESKTOP---*/
 @media only screen and (min-width: 1150px) {
-#gridIndex {
-    grid-template-areas:
-        "parrafoIndex1 mediaIndex1"
-        "mediaIndex2   parrafoIndex2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    }  
-    #parrafoIndex1 {
-    justify-self: end; 
-    width: 50rem;            
+    .tituloImagenPrincipal{
+        font-size: 7rem;
     }
-    #mediaIndex1 { 
-    justify-self: start;
-    width:540px;
-    height:300px;
-    }
-    #mediaIndex2 { 
-    justify-self: end; 
-    width:540px;
-    }
-    #parrafoIndex2 { 
-    justify-self: start; 
-    width: 50rem;    
+    .subtituloImagenPrincipal{
+        font-size: 5rem;
     }
 }
 

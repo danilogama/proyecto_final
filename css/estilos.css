@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /*Paleta de colores*/
-/*Font Size titulos*/
 /*Caja parrafos */
 /*Paleta de colores*/
-/*Font Size titulos*/
 /*Caja parrafos */
 * {
   Margin: 0;
@@ -159,16 +157,6 @@ a {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-h1 {
-  text-align: center;
-  font-size: 8rem;
-  margin: 2rem;
-  margin-top: 8rem; }
-
-h2 {
-  text-align: center;
-  font-size: 6rem; }
-
 .bordesNegros {
   -webkit-text-stroke: 2px black; }
 
@@ -202,9 +190,18 @@ h2 {
   margin-bottom: 5rem;
   margin-top: 10rem; }
 
-.TextoImagenPrincipal {
+.tituloImagenPrincipal {
   color: white;
-  font-weight: 700; }
+  font-family: 'Alegreya', serif; }
+
+.subtituloImagenPrincipal {
+  color: white;
+  font-family: 'Alegreya', serif; }
+
+.TextoImagenPrincipalMovil {
+  color: white;
+  font-weight: 700;
+  font-family: 'Alegreya', serif; }
 
 /*-----Usando FOR--------*/
 #mediaIndex1 {
@@ -519,15 +516,8 @@ form {
   border: 2px solid #09f7eb;
   border-color: #09f7eb;
   width: 180px;
-  transition: all 0.3s; }
-  .button1:hover a {
-    color: white;
-    text-decoration: none; }
-
-/*--- Error 404 ---*/
-#imagenError {
-  float: left;
-  width: 200px; }
+  transition: all 0.3s;
+  color: white; }
 
 p {
   color: white;
@@ -538,21 +528,23 @@ p {
   letter-spacing: 0.5px; }
 
 h1 {
-  color: #08d6dd; }
+  color: #08d6dd;
+  text-align: center;
+  margin: 2rem;
+  margin-top: 8rem;
+  font-weight: bold; }
 
 h2 {
-  color: #08d6dd; }
+  color: #08d6dd;
+  text-align: center; }
 
 h3 {
   color: #09f7eb;
-  font-weight: 700;
   text-transform: uppercase;
   line-height: 5rem;
-  font-size: 4rem;
   text-align: center;
   margin-top: 0px;
-  font-style: italic;
-  margin: 3rem; }
+  font-style: italic; }
 
 form label {
   font-size: 1.2rem;
@@ -708,6 +700,10 @@ hr {
 .contQuienesSomos {
   margin-top: 5rem; }
 
+/*--- Error 404 ---*/
+#imagenError {
+  text-align: center; }
+
 html {
   font-size: 62.5%; }
 
@@ -716,7 +712,7 @@ body {
 
 /*------------------Responsive index---------------*/
 /*---Pantalla pequeña--*/
-@media only screen and (min-width: 260px) {
+@media only screen and (min-width: 240px) {
   #parrafoIndex1 {
     justify-self: center;
     width: 40rem;
@@ -729,10 +725,16 @@ body {
   #parrafoIndex2 {
     width: 40rem;
     font-size: 1.4rem; }
-  .textoImagenPrincipal {
+  .textoImagenPrincipalMovil {
     font-size: 2.5rem; }
   .containerMovil {
-    top: 4rem !important; } }
+    top: 4rem !important; }
+  h1 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.5rem; }
+  h2 {
+    font-size: 2rem; } }
 
 @media only screen and (max-width: 768px) {
   p {
@@ -749,17 +751,19 @@ body {
   .footer__texto-mail {
     font-size: 1rem;
     margin: 0rem; }
-  h3 {
-    font-size: 3rem; }
-  h2 {
-    font-size: 3.5rem; }
-  h1 {
-    font-size: 4rem; }
   .containerImagenPrincipal {
     display: none; } }
 
+@media only screen and (min-width: 500px) {
+  h3 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 4rem; }
+  h1 {
+    font-size: 5rem; } }
+
 /*---TABLET---*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .fotterFinal {
     bottom: 0vh; }
   .containerMovil {
@@ -776,25 +780,16 @@ body {
   #parrafoIndex2 {
     width: 50rem;
     font-size: 1.8rem; }
-  .textoImagenPrincipal {
-    font-size: 3.5rem; } }
+  .tituloImagenPrincipal {
+    font-size: 5rem;
+    text-align: left; }
+  .subtituloImagenPrincipal {
+    font-size: 3rem;
+    text-align: left; } }
 
 /*---DESKTOP---*/
 @media only screen and (min-width: 1150px) {
-  #gridIndex {
-    grid-template-areas: "parrafoIndex1 mediaIndex1" "mediaIndex2   parrafoIndex2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr; }
-  #parrafoIndex1 {
-    justify-self: end;
-    width: 50rem; }
-  #mediaIndex1 {
-    justify-self: start;
-    width: 540px;
-    height: 300px; }
-  #mediaIndex2 {
-    justify-self: end;
-    width: 540px; }
-  #parrafoIndex2 {
-    justify-self: start;
-    width: 50rem; } }
+  .tituloImagenPrincipal {
+    font-size: 7rem; }
+  .subtituloImagenPrincipal {
+    font-size: 5rem; } }
