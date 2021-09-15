@@ -38,7 +38,7 @@ body{
                 transition: 3ms;
             }
             a:hover{
-                background-color: $colorCeleste;
+                background-color: $colorPrincipal;
                 color: black !important;
             
                 border-radius: 1rem;
@@ -72,19 +72,51 @@ nav a img:hover{
         font-weight: bold;
     }
     a:hover{
-        background-color:$colorCeleste;
+        background-color:$colorPrincipal;
         border-radius: 1rem;
         color: black !important;
     }
 }
 
+p{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    text-transform: initial;
+    margin: 1rem;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    color: $colorFontParrafo;    
+    text-align: center;
+    margin: 2rem;
+    margin-top: 8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2{
+    color: $colorFontParrafo;    
+    text-align: center;
+      
+}
+h3{
+    color: $colorPrincipal;  
+    text-transform: uppercase;
+    line-height: 5rem;
+    text-align: center;
+    margin-top: 0px;
+    font-style: italic;
+}
+
 .bg-info{
-    background-color: $colorCeleste!important;
+    background-color: $colorPrincipal!important;
     margin-left: 0.5rem;
 }
 
 .footer {    
-    background-color:$colorCeleste;
+    background-color:$colorPrincipal;
     margin-top: 1rem;
     padding: 1rem;
     position: absolute;
@@ -159,6 +191,7 @@ nav a img:hover{
 
 a {
     text-align: center;
+    text-decoration: none;
 }
 .blog__busqueda{
     clear: right;
@@ -170,8 +203,6 @@ a {
 .blog__parrafo{
     font-size: 1.8rem;    
 }
-
-
 
 .margenp{
     margin-top: 5rem;
@@ -210,14 +241,58 @@ a {
     max-height: 500px;
     margin-top: 10rem;
 }
+ 
+
+.containerImagenPrincipal {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    animation-duration: 4s;
+    animation-name: aparecer;    
+}
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+.containerMovil {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
   
-#contenedorImagenPrincipal {
-    position: relative; 
-    display:block;
-    margin:auto;
-    text-align: center;
-    margin-bottom: 5rem;
-    margin-top: 10rem;
+.text-blockMovil {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.imagenZoom{
+    transition: all 1s;
+}
+.imagenZoom:hover{
+    
+    transform: scale(0.8);
+    transition: all 1s;
 }
 
 .tituloImagenPrincipal{    
@@ -229,7 +304,7 @@ a {
     font-family: 'Alegreya', serif;
 }
 .TextoImagenPrincipalMovil {
-    color: white;
+    color: $colorPrincipal;
     font-weight: 700;
     font-family: 'Alegreya', serif;
 }
@@ -243,230 +318,6 @@ a {
         width:350px; }
 }
 
-
-/*------------------Productos---------------*/
-#gridProductosGrande {
-    display: grid; 
-    justify-content: center;
-    grid-template-areas:
-      "imagenProducto1  parrafoProducto1"
-      "imagenProducto1  imagenTienda1"
-      "imagenProducto1  imagenTienda11"
-      "imagenProducto2  parrafoProducto2"
-      "imagenProducto2  imagenTienda2"
-      "imagenProducto2  imagenTienda22"
-      "imagenProducto3  parrafoProducto3"
-      "imagenProducto3  imagenTienda3"
-      "imagenProducto3  imagenTienda33";
-    grid-template-columns: 1.2fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    margin: 2rem;
-}
-#imagenProducto1 {
-    grid-area: imagenProducto1;  
-    justify-self: end;
-    align-self: center;
-    margin: 1rem;        
-    width:570px;
-    height:350px;
-}
-#parrafoProducto1 {
-    grid-area: parrafoProducto1; 
-    justify-self: start;
-    align-self: center;
-    font-size: 1.8rem;    
-}
-#imagenTienda1{
-    grid-area: imagenTienda1;  
-    justify-self: start;
-    align-content: flex-end;
-    margin: 1rem;         
-    width:10px;
-    height:50px;    
-}
-#imagenTienda11{
-    grid-area: imagenTienda11;  
-    justify-self: start;
-    align-content: flex-start;
-    margin: 1rem;         
-    width:10px;
-    height:50px;    
-}
-#imagenProducto2 {
-    grid-area: imagenProducto2;  
-    justify-self: end;
-    align-self: center;
-    margin: 1rem;         
-    width:570px;
-    height:350px;
-}
-#parrafoProducto2 {
-    grid-area: parrafoProducto2; 
-    justify-self: start;
-    align-self: center;
-    font-size: 1.8rem;    
-}
-#imagenTienda2{
-    grid-area: imagenTienda2;  
-    justify-self: start;
-    align-content: center;
-    margin: 1rem;           
-    width:10px;
-    height:50px;
-}
-#imagenTienda22{
-    grid-area: imagenTienda22;  
-    justify-self: start;
-    align-content: flex-start;
-    margin: 1rem;           
-    width:10px;
-    height:50px;
-}
-#imagenProducto3 {
-    grid-area: imagenProducto3;  
-    justify-self: end;
-    align-self: center;
-    margin: 1rem;         
-    width:570px;
-    height:350px;
-}
-#parrafoProducto3 {
-    grid-area: parrafoProducto3; 
-    justify-self: start;
-    align-self: center;
-    font-size: 1.8rem;    
-}
-#imagenTienda3{
-    grid-area: imagenTienda3;  
-    justify-self: start;
-    align-content: center;
-    margin: 1rem;   
-    width:100px;
-     height:40px; 
-}
-#imagenTienda33{
-    grid-area: imagenTienda33;  
-    justify-self: start;
-    align-content: flex-start;
-    margin: 1rem;        
-    width:10px;
-    height:50px;
-}
-#gridProductosChica {
-    display: grid; 
-    justify-content: center;
-    grid-template-areas:
-      "imagenProductoChico1  imagenProductoChico2   imagenProductoChico3"
-      "parrafoProductoChico1 parrafoProductoChico2  parrafoProductoChico3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;    
-    margin-top: 4rem;
-}
-#imagenProductoChico1 {
-    grid-area: imagenProductoChico1;  
-    justify-self: end;
-    align-self: center;
-    margin: 1rem;
-    width:300px;
-}
-#parrafoProductoChico1 {
-    grid-area: parrafoProductoChico1; 
-    justify-self: end;
-    width: 30rem;
-    font-size: 1.5rem;   
-}
-#imagenProductoChico2 {
-    grid-area: imagenProductoChico2;  
-    justify-self: center;
-    align-self: center;
-    margin: 1rem;        
-    width:300px;
-}
-#parrafoProductoChico2 {
-    grid-area: parrafoProductoChico2; 
-    justify-self: center;
-    width: 30rem;
-    font-size: 1.5rem;    
-}
-#imagenProductoChico3 {
-    grid-area: imagenProductoChico3;  
-    justify-self: start;
-    align-self: center;
-    margin: 1rem;        
-    width:300px;
-}
-#parrafoProductoChico3 {
-    grid-area: parrafoProductoChico3; 
-    justify-self: start;
-    width: 30rem;
-    font-size: 1.5rem;
-}
-
-
-
-/*------------------Novedades---------------*/
-#gridNovedades {
-    display: grid; 
-    justify-content: center;
-    grid-template-areas:
-      "ImagenNot1   ImagenNot2"
-      "TituloNot1   TituloNot2"
-      "CopeteNot1   CopeteNot2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-}
-#ImagenNot1 {
-    grid-area: ImagenNot1;  
-    justify-self: center;
-    align-self: center;
-    margin: 1rem;        
-    width:500px;
-}
-#TituloNot1 {
-    grid-area: TituloNot1; 
-    justify-self: center;
-    align-self: center;
-    width: 45rem; 
-    font-size: 5rem;
-}
-#CopeteNot1 {
-    grid-area: CopeteNot1; 
-    justify-self: center;
-    width: 45rem; 
-}#ImagenNot2 {
-    grid-area: ImagenNot2;  
-    justify-self: center;
-    align-self: center;
-    margin: 1rem;        
-    width:500px;
-}
-#TituloNot2 {
-    grid-area: TituloNot2; 
-    justify-self: center;
-    align-self: center;
-    width: 45rem; 
-    
-    font-size: 5rem;
-}
-#CopeteNot2 {
-    grid-area: CopeteNot2; 
-    justify-self: center;
-    width: 45rem; 
-}
-
-.ImgNovedad{
-    width:500px;
-}
-
-.ImgNovedad:hover{
-    transform: scale(1.2,1.2);
-}
 .margenNot{
     display:block; margin:2rem auto ;
     width: 75rem;
@@ -478,12 +329,11 @@ a {
     margin-top: 8rem;
 }
 
-/*------------------Oportunidades---------------*/
+/*---------------- OPORTUNIDADES ---------------------*/
 
 form {
     color:white;
-}
-   
+}   
 
 .areaContacto .textoFormulario {
     width: auto;
@@ -541,21 +391,15 @@ form {
 .button1{
     width: 150px;
     height: 35px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
     text-transform: uppercase;
     font-weight: 700;  
-    justify-self: center;
     font-size: 1.2rem;
     border: none; 
     font-weight: bold;
     border-radius: 1rem;
-    transition: all 0.4s;
-    
+    transition: all 0.4s;    
     color: black;
-    background-color: $colorCeleste;
+    background-color: $colorPrincipal;
 
     a{
         color: black;
@@ -565,43 +409,13 @@ form {
 
 .button1:hover{
     background-color: black;
-    border: 2px solid $colorCeleste;
-    border-color: $colorCeleste;
+    border: 2px solid $colorPrincipal;
+    border-color: $colorPrincipal;
     width: 180px;
     transition: all 0.3s;    
     color: white;
 }
 
-p{
-    color: white;
-    font-size: 2rem;
-    text-align: left;
-    text-transform: initial;
-    margin: 1rem;
-    letter-spacing: 0.5px;
-}
-
-h1{
-    color: $colorFontParrafo;    
-    text-align: center;
-    margin: 2rem;
-    margin-top: 8rem;
-    font-weight: bold;
-}
-
-h2{
-    color: $colorFontParrafo;    
-    text-align: center;
-      
-}
-h3{
-    color: $colorCeleste;  
-    text-transform: uppercase;
-    line-height: 5rem;
-    text-align: center;
-    margin-top: 0px;
-    font-style: italic;
-}
 
 form label {
     font-size: 1.2rem;
@@ -611,59 +425,10 @@ form textarea{
     width: 100%;
 }
 
-
-.bloqueGames{
-    margin: 4rem;
-}
-.bloqueGames img{
-    transition:all 0.3s;
-}
-.bloqueGames img:hover{
-    transition:all 0.3s;
-    transform: scale(1.1);
-}
-
-.bloqueNovedades{
-    margin: 4rem;
-}
-
-.bloqueNovedades img:hover{
-    transition:all 0.3s;
-    transform: scale(1.1);
-}
-.bloqueOportunidades{
-    margin: 4rem;
-}
-.bloqueOportunidades img:hover{
-    transition:all 0.3s;
-    transform: scale(1.1);
-}
-.itemmenu{
-    text-decoration: none;
-    color: $colorCeleste!important;
-}
-.navbar-light .navbar-nav .nav-link{
-    color:$colorCeleste ;
-    border-radius: 1rem;
-}
-
-.navbar-light .navbar-nav .nav-link:hover{
-    color:black ;
-}
-
-.navbar-toggler{
-    color: $colorCeleste!important;
-}
-
-.fondoColor{
-    color: $colorCeleste;
-    z-index: 1000;
-}
-
-/*boton ver mas*/
+/*boton form*/
 .button2{    
     color: black;
-    background-color: $colorCeleste;
+    background-color: $colorPrincipal;
     width: 60px;
     height: 30px;
     justify-content: center;
@@ -682,12 +447,70 @@ form textarea{
 .button2:hover{
     color: white;
     background-color: black;
-    border: 2px solid $colorCeleste;
-    border-color: $colorCeleste;
+    border: 2px solid $colorPrincipal;
+    border-color: $colorPrincipal;
+}
+
+/*---------------- GAMES ---------------------*/
+.bloqueGames{
+    margin: 4rem;
+}
+.bloqueGames img{
+    transition:all 0.3s;
+}
+.bloqueGames img:hover{
+    transition:all 0.3s;
+    transform: scale(1.1);
+}
+
+/*---------------- NOVEDADES ---------------------*/
+.bloqueNovedades{
+    margin: 4rem;
+}
+
+.bloqueNovedades img:hover{
+    transition:all 0.3s;
+    transform: scale(1.1);
+}
+
+.card-group {
+    margin: 1rem;
+}
+
+.card-group>.card{
+    margin-right: 1rem;
+}
+
+  
+/*---------------- ERROR 404 ---------------------*/
+#imagenError{
+    text-align: center;
+}  
+
+.itemmenu{
+    text-decoration: none;
+    color: $colorPrincipal!important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:$colorPrincipal ;
+    border-radius: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:black ;
+}
+
+.navbar-toggler{
+    color: $colorPrincipal!important;
+}
+
+.fondoColor{
+    color: $colorPrincipal;
+    z-index: 1000;
 }
 
 .seleccionNav{
-    background-color: $colorCeleste;
+    background-color: $colorPrincipal;
     border-radius: 1rem;
     color: black!important;
 }
@@ -700,14 +523,6 @@ form textarea{
 .align-items-center {
     align-items: center!important;
     margin: 5rem;
-}
-
-.card-group {
-    margin: 1rem;
-}
-
-.card-group>.card{
-    margin-right: 1rem;
 }
 
 .modal-content{
@@ -724,75 +539,15 @@ hr{
     border: 1px solid white;
 }
 
-.imagenZoom{
-    transition: all 1s;
-}
-.imagenZoom:hover{
-    
-    transform: scale(0.8);
-    transition: all 1s;
-}
-
 .enlace{
     font-size: 1.5rem;
 }
 
-
 .iconoStore{
-
     text-align: center;
-}
-
-.containerImagenPrincipal {
-    position: relative;
-}
-
-.text-block {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    animation-duration: 4s;
-    animation-name: aparecer;    
-}
-
-@keyframes aparecer {
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-}
-
-.containerMovil {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    position:relative;
-}
-  
-.text-blockMovil {
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 .contQuienesSomos{
     margin-top: 5rem;
 }
 
-  
-/*--- Error 404 ---*/
-#imagenError{
-    text-align: center;
-    //margin-top: 5rem;
-}  
